@@ -13,8 +13,6 @@ public class Cdr {
     public static final String TYPE_OUTGOING = "02";
     private LocalDateTime endTime;
     private Duration duration;
-    /*private String startTime;
-    private String endTime;*/
     private String tariffCode;
 
     public Cdr(String type, String phoneNumber, String startTime, String endTime, String tariffCode) {
@@ -22,8 +20,6 @@ public class Cdr {
         this.phoneNumber = phoneNumber;
         this.startTime = LocalDateTime.parse(startTime, DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
         this.endTime = LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
-        /*this.startTime = startTime;
-        this.endTime = endTime;*/
         this.duration = Duration.between(this.startTime, this.endTime);
         this.tariffCode = tariffCode;
     }

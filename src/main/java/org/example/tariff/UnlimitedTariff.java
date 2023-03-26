@@ -16,7 +16,6 @@ public class UnlimitedTariff extends Tariff {
     @Override
     public double calculateCost(LocalDateTime startTime, LocalDateTime endTime, long summaryDuration, Cdr CDR) {
         long summaryDurationInMinutes = summaryDuration / 60 + (summaryDuration % 60 > 0 ? 1 : 0);
-
         if (summaryDurationInMinutes <= FREE_MINUTES) {
             return 0.0;
         } else {

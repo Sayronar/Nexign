@@ -22,7 +22,7 @@ public class RegularTariff extends Tariff {
         long durationInMinutes = (long) Math.ceil(durationInSeconds / 60.0);
         long summaryDurationInMinutes = (long) Math.ceil(summaryDuration / 60.0);
         // если звонок был входящим, то стоимость равна 0
-        if (CDR.getType().equals("02")) {
+        if (CDR.getType().equals(Cdr.TYPE_OUTGOING)) {
             return INCOMING_CALL_COST;
         } else {
             // если звонок был исходящим и длился не более 100 минут, то стоимость равна продолжительности звонка умноженной на стоимость минуты
