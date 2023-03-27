@@ -30,7 +30,7 @@ public class ReportWriter {
 
     private static String formatCall(Cdr CDR) {
         return String.format("|     %02d    | %s | %s | %s | %6.2f |\n",
-                CDR.getType().equals(CallType.INCOMING.getValue()) ? 1 : 2,
+                CDR.getType().equals(CallType.INCOMING.getValue()) ? 2 : 1,
                 CDR.getStartTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
                 CDR.getEndTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
                 String.format("%02d:%02d:%02d", CDR.getDuration().toHours(), CDR.getDuration().toMinutesPart(), CDR.getDuration().toSecondsPart()),
