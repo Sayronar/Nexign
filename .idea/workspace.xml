@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -85,7 +86,7 @@
       <workItem from="1679832387033" duration="13727000" />
       <workItem from="1679850033767" duration="7812000" />
       <workItem from="1679859655289" duration="6752000" />
-      <workItem from="1679869843723" duration="3065000" />
+      <workItem from="1679869843723" duration="10996000" />
     </task>
     <servers />
   </component>
@@ -93,8 +94,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Nexign_Bootcamp_2023$Main.ic" NAME="Main Coverage Results" MODIFIED="1679745984572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>org.example.*</FILTER>
+    <SUITE FILE_PATH="coverage/Nexign_Bootcamp_2023$Main.ic" NAME="Main Coverage Results" MODIFIED="1679877069961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.tariff.*</FILTER>
     </SUITE>
   </component>
 </project>

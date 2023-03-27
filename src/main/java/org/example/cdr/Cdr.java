@@ -9,8 +9,6 @@ public class Cdr {
     private String type;
     private String phoneNumber;
     private LocalDateTime startTime;
-    public static final String TYPE_INCOMING = "01";
-    public static final String TYPE_OUTGOING = "02";
     private LocalDateTime endTime;
     private Duration duration;
     private String tariffCode;
